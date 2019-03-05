@@ -20,7 +20,7 @@ for i in s:
 args = [str(i) for i in [xl-2, xr+2, yd-2, yu+2]]
 
 asy = open('draw_app/asy.asy', 'w')
-asy.write('''settings.outformat ="pdf";
+asy.write('''settings.outformat ="png";
 unitsize(2cm);
 
 void grid(int xl, int xr, int yd, int yu) {
@@ -38,25 +38,31 @@ void grid(int xl, int xr, int yd, int yu) {
 var pos = (0, 0);
 
 void A(){
-    draw(pos -- (pos + (-1, 0)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (-1, 0)), arrow = MidArrow(arrowhead = TeXHead), magenta + linewidth(2));
     pos = pos + (-1, 0);
 }
 
 void a(){
-    draw(pos -- (pos + (1, 0)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (1, 0)), arrow = MidArrow(arrowhead = TeXHead), magenta + linewidth(2));
     pos = pos + (1, 0);
 }
 
 void B(){
-    draw(pos -- (pos + (0, -1)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (0, -1)), arrow = MidArrow(arrowhead = TeXHead), red + linewidth(2));
     pos = pos + (0, -1);
 }
 
 void b(){
-    draw(pos -- (pos + (0, 1)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (0, 1)), arrow = MidArrow(arrowhead = TeXHead), red + linewidth(2));
     pos = pos + (0, 1);
 }\n''')
 asy.write('grid(%s);\n'%(','.join(args)))
 for i in s:
     asy.write('%s();\n' %i)
+
+asy.close()
+
+help = open('draw_app/help.txt', 'w')
+help.write(s)
+help.close()
 

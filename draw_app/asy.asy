@@ -1,4 +1,4 @@
-settings.outformat ="pdf";
+settings.outformat ="png";
 unitsize(2cm);
 
 void grid(int xl, int xr, int yd, int yu) {
@@ -16,81 +16,26 @@ void grid(int xl, int xr, int yd, int yu) {
 var pos = (0, 0);
 
 void A(){
-    draw(pos -- (pos + (-1, 0)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (-1, 0)), arrow = MidArrow(arrowhead = TeXHead), magenta + linewidth(2));
     pos = pos + (-1, 0);
 }
 
 void a(){
-    draw(pos -- (pos + (1, 0)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (1, 0)), arrow = MidArrow(arrowhead = TeXHead), magenta + linewidth(2));
     pos = pos + (1, 0);
 }
 
 void B(){
-    draw(pos -- (pos + (0, -1)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (0, -1)), arrow = MidArrow(arrowhead = TeXHead), red + linewidth(2));
     pos = pos + (0, -1);
 }
 
 void b(){
-    draw(pos -- (pos + (0, 1)), arrow = MidArrow(arrowhead = TeXHead), orange + linewidth(2));
+    draw(pos -- (pos + (0, 1)), arrow = MidArrow(arrowhead = TeXHead), red + linewidth(2));
     pos = pos + (0, 1);
 }
-grid(-12,13,-8,11);
+grid(-2,3,-2,3);
 a();
 b();
-a();
-b();
-a();
-b();
-a();
-b();
-a();
-b();
-a();
-b();
-a();
-b();
-a();
-b();
-a();
-b();
-a();
-a();
+A();
 B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-B();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-A();
-b();
-b();
-b();
