@@ -1,0 +1,94 @@
+\documentclass[12pt,a4paper, flushleft]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{mathrsfs, dsfont} % специальные шрифты, по типу \mathscr или \dsfont
+\usepackage{comment} %для многострочных комментариев
+\usepackage{xcolor} %для гиперссылок в тексте и их цвета
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{multicol}
+\graphicspath{/home/cowberry/Documents/10M/SPTYM/pics/}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}	
+\usepackage[most]{tcolorbox}
+\definecolor{block-gray}{gray}{0.90} % уровень прозрачности (1 - максимум)
+\newtcolorbox{myquote}{colback=block-gray,grow to right by=-25mm,grow to left by=-25mm, boxrule=1pt,boxsep=0pt,breakable}
+\author{Анатолий Коченюк, команда ЛНМО\#2}
+\date{Март 2019}
+\title{Зодача \textsuperscript{\textregistered} №5}
+\newcommand{\horline}[1]{
+		\begin{center}
+			\begin{picture}(#1, 2)
+				\line(1,0){#1}%
+			\end{picture}
+		\end{center}
+	}
+\title{
+	\vspace{4cm}	
+	\horline{280}	
+	\begin{center}
+		\begin{Huge}
+			\textbf{\emph{Задача 8. Расслоения.}}
+		\end{Huge}
+	\end{center}	
+	\vspace{-1.3cm}	
+	\horline{300}
+	%\includegraphics[scale=0.15]{abgrx.png}
+}
+\newtheorem{Def}{Определение}[section]
+\newtheorem{Th}{Теорема}[section]
+\newtheorem{Lm}{Лемма}[section] 
+\newtheorem{Pb}{Задача}[section]
+\newtheorem{Qu}{Признак}[section]
+\newtheorem{St}{Утверждение}[section]
+\newtheorem{Sl}{Следствие}[section]
+\newtheorem{Zm}{Замечание}[section]
+\newtheorem{Con}{Условие}[section]
+\usepackage{relsize}
+\newcommand{\vel}{\mathlarger{\mathlarger{\upsilon}}}
+\newcommand{\der}[1]{\overset{\cdot}{#1}}
+\newcommand{\dder}[1]{\overset{\cdot \cdot}{#1}}
+\newcommand{\Lim}[2]{\lim\limits_{#1\to #2}}
+\newcommand{\Ch}[1]{\overset{#1}{=}}
+\newcommand{\p}[1]{#1^{\prime}}
+\newcommand{\pp}[1]{#1^{\prime\prime}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\oll}[1]{\overline{\overline{#1}}}
+\newcommand{\ov}[2]{\overset{#1}{#2}}
+\newcommand{\un}[1]{\underline{#1}}
+\newcommand{\gr}[2]{\includegraphics[scale=#1]{../pics/#2}}
+\usepackage{comment}
+
+\begin{document}
+\maketitle
+
+\pagebreak
+
+\tableofcontents	
+	
+\pagebreak
+\section*{Введение}
+
+
+\begin{Def}
+	Прообраз функции $f\qquad a\in\mathds{R} f^{-1}(a) = \{c\in\mathds{R}|f(x) = a\}$
+\end{Def}
+
+\begin{Def}
+	$f$ -- непрерывна и все её прообразы конечны
+\end{Def}
+
+\begin{Def}
+	По $f$ определим функцию $f^{\circ}:\mathds{R}\to \mathds{N}\cup \{0\}\subset \mathds{R}\quad f^{\circ}(a) = |f^{-1}(a)|$
+\end{Def}
+
+\section{Многочлены}
+$f$ -- многочлен степени $d\geqslant 0$
+
+\subsection{Наибольшее значение $f^{\circ}$}
+
+	$f^{\circ}(a)$ отвечает уравнению $f(x) = a$, т.е. уравнению степени $d$  у которого не более $d$ вещественных решений, т.е. наибольшее значение $f^{\circ}(a)$, при том что степень многочлена --- $d$, равна $d$ 
+\end{document} 

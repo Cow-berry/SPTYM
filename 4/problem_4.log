@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  20 MAR 2019 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  20 MAR 2019 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**problem5.tex
-(./problem5.tex
+**problem_4.tex
+(./problem_4.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1466,27 +1466,27 @@ Package: relsize 2013/03/29 ver 4.1
 LaTeX Warning: Unused global option(s):
     [flushleft].
 
-(./problem5.aux)
-\openout1 = `problem5.aux'.
+(./problem_4.aux)
+\openout1 = `problem_4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1519,7 +1519,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1529,13 +1529,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
-LaTeX Info: Redefining \nameref on input line 65.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
-(./problem5.out) (./problem5.out)
+(./problem_4.out) (./problem_4.out)
 \@outlinefile=\write7
-\openout7 = `problem5.out'.
+\openout7 = `problem_4.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1574,192 +1574,84 @@ LaTeX Info: Redefining \nameref on input line 65.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count332
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 67.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 69.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./problem5.toc)
-\tf@toc=\write8
-\openout8 = `problem5.toc'.
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 85.
- [2]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 88.
+(babel)             in language  on input line 78.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 141.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 149.
+(babel)             in language  on input line 110.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 150.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 150.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 150.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 150.
- [3]
-<../pics/babAAba.png, id=121, 344.28625pt x 401.5pt>
-File: ../pics/babAAba.png Graphic file (type png)
-<use ../pics/babAAba.png>
-Package pdftex.def Info: ../pics/babAAba.png  used on input line 159.
-(pdftex.def)             Requested size: 86.07135pt x 100.37474pt.
-<../pics/bbb.png, id=123, 230.8625pt x 401.5pt>
-File: ../pics/bbb.png Graphic file (type png)
-<use ../pics/bbb.png>
-Package pdftex.def Info: ../pics/bbb.png  used on input line 159.
-(pdftex.def)             Requested size: 57.71547pt x 100.37474pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
-[]$\OML/cmm/m/it/12 babAAba$ \T2A/cmr/m/n/12 è $\OML/cmm/m/it/12 bbb$\T2A/cmr/m
-/n/12 . $\OML/cmm/m/it/12 babA\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 AbaB\OT1/cmr/m/
-n/12 ]\OML/cmm/m/it/12 BB \OMS/cmsy/m/n/12 ^^Q
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 110.
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 161--163
-\OML/cmm/m/it/12 ba\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 AbaB\OT1/cmr/m/n/12 ]\OML/
-cmm/m/it/12 bABB \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 b\OT1/cmr/m/n/12 [\OML/cmm/
-m/it/12 aA\OT1/cmr/m/n/12 ]\OML/cmm/m/it/12 ba\OT1/cmr/m/n/12 [\OML/cmm/m/it/12
- Bb\OT1/cmr/m/n/12 ]\OML/cmm/m/it/12 ABB \OMS/cmsy/m/n/12 ^^Q
- []
-
-<../pics/bbA.png, id=124, 287.0725pt x 344.28625pt>
-File: ../pics/bbA.png Graphic file (type png)
-<use ../pics/bbA.png>
-Package pdftex.def Info: ../pics/bbA.png  used on input line 166.
-(pdftex.def)             Requested size: 71.76794pt x 86.07135pt.
-<../pics/aaB.png, id=125, 344.28625pt x 287.0725pt>
-File: ../pics/aaB.png Graphic file (type png)
-<use ../pics/aaB.png>
-Package pdftex.def Info: ../pics/aaB.png  used on input line 166.
-(pdftex.def)             Requested size: 86.07135pt x 71.76794pt.
-<../pics/aabbAABB.png, id=126, 344.28625pt x 344.28625pt>
-File: ../pics/aabbAABB.png Graphic file (type png)
-<use ../pics/aabbAABB.png>
-Package pdftex.def Info: ../pics/aabbAABB.png  used on input line 180.
-(pdftex.def)             Requested size: 86.07135pt x 86.07135pt.
-<../pics/abAB.png, id=127, 287.0725pt x 287.0725pt>
-File: ../pics/abAB.png Graphic file (type png)
-<use ../pics/abAB.png>
-Package pdftex.def Info: ../pics/abAB.png  used on input line 180.
-(pdftex.def)             Requested size: 71.76794pt x 71.76794pt.
-
-Overfull \vbox (63.0907pt too high) has occurred while \output is active []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 110.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 190.
-
-[4 <../pics/babAAba.png> <../pics/bbb.png> <../pics/bbA.png> <../pics/aaB.png> 
-<../pics/aabbAABB.png> <../pics/abAB.png>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 203.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 203.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 208.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 208.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 211.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 211.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 240.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 240.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 242.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 242.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 246.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 246.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 246.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 246.
- [5]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 268.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 268.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 270.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 270.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 273.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 273.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 273.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 273.
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
- (./problem5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
-Package rerunfilecheck Info: File `problem5.out' has not changed.
-(rerunfilecheck)             Checksum: B9A991F9456024030AA4FD0D5359151E;2226.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
+(babel)             in language  on input line 119.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+ (./problem_4.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package rerunfilecheck Info: File `problem_4.out' has not changed.
+(rerunfilecheck)             Checksum: 37DF0DF2F7B58BAD9536BAF3C35CA921;760.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 35981 strings out of 492982
- 688645 string characters out of 6134895
- 865879 words of memory out of 5000000
- 38991 multiletter control sequences out of 15000+600000
- 551213 words of font info for 75 fonts, out of 8000000 for 9000
+ 35830 strings out of 492982
+ 686419 string characters out of 6134895
+ 862871 words of memory out of 5000000
+ 38917 multiletter control sequences out of 15000+600000
+ 548147 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,6n,101p,10568b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,6n,101p,10569b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
@@ -1768,16 +1660,16 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublest
 roke/dsrom12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi2488.pfb></us
+bols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi2488.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfti1200.pfb>
-Output written on problem5.pdf (6 pages, 243885 bytes).
+Output written on problem_4.pdf (2 pages, 167715 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

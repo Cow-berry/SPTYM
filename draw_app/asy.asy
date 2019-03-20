@@ -34,8 +34,16 @@ void b(){
     draw(pos -- (pos + (0, 1)), arrow = MidArrow(arrowhead = TeXHead), red + linewidth(2));
     pos = pos + (0, 1);
 }
-grid(-2,3,-2,3);
+grid(-2,4,-2,4);
+a();
 a();
 b();
+B();
 A();
+a();
+b();
+b();
+A();
+A();
+B();
 B();

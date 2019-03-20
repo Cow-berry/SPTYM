@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[12pt,a4paper, flushleft]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[T2A]{fontenc}
@@ -13,8 +13,31 @@
 \usepackage{multicol}
 \graphicspath{/home/cowberry/Documents/10M/SPTYM/pics/}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}	
-\author{Коченюк Анатолий}
+\usepackage[most]{tcolorbox}
+\definecolor{block-gray}{gray}{0.90} % уровень прозрачности (1 - максимум)
+\newtcolorbox{myquote}{colback=block-gray,grow to right by=-25mm,grow to left by=-25mm, boxrule=1pt,boxsep=0pt,breakable}
+\author{Анатолий Коченюк, команда ЛНМО\#2}
+\date{Март 2019}
 \title{Зодача \textsuperscript{\textregistered} №5}
+\newcommand{\horline}[1]{
+		\begin{center}
+			\begin{picture}(#1, 2)
+				\line(1,0){#1}%
+			\end{picture}
+		\end{center}
+	}
+\title{
+	\vspace{4cm}	
+	\horline{380}	
+	\begin{center}
+		\begin{Huge}
+			\textbf{\emph{Задача 5. Крадущаяся змея, затаившееся полимино.}}
+		\end{Huge}
+	\end{center}	
+	\vspace{-1.3cm}	
+	\horline{400}
+	%\includegraphics[scale=0.15]{abgrx.png}
+}
 \newtheorem{Def}{Определение}[section]
 \newtheorem{Th}{Теорема}[section]
 \newtheorem{Lm}{Лемма}[section] 
@@ -23,6 +46,7 @@
 \newtheorem{St}{Утверждение}[section]
 \newtheorem{Sl}{Следствие}[section]
 \newtheorem{Zm}{Замечание}[section]
+\newtheorem{Con}{Условие}[section]
 \usepackage{relsize}
 \newcommand{\vel}{\mathlarger{\mathlarger{\upsilon}}}
 \newcommand{\der}[1]{\overset{\cdot}{#1}}
@@ -40,6 +64,24 @@
 
 \begin{document}
 \maketitle
+\vspace{4cm}
+	
+	\begin{myquote}
+	\begin{center}
+		\textbf{Аннотация}\\
+		\textit{
+			В этой статье полностью решён первый пункт, а также решена часть второго пункта.\\
+			Были доказаны некоторые леммы, позволяющие удобно работать с эквивалентностью ломаных.
+			Также были доказаны два условия того, что ломаная является кратчайшей.
+		}
+	\end{center}
+	\end{myquote}	
+	
+	\pagebreak
+
+	\tableofcontents	
+	
+	\pagebreak
 
 \section*{Введение}
 
@@ -65,7 +107,7 @@
 	\item Вытягивание и затягивание -- добавление в любое место пути $l\in\{aA, Aa, bB, Bb\}$
 	\item Перенос -- мы можем свободно перемещать в любое место пути определённые комбинации. В Теории групп есть понятие описывающие такие конструкции -- коммутатор.
 	
-	Коммутатор -- для $f, g\in G$  $ [g, h] = g^{-1}h^{-1}gh$. 
+	Коммутатор -- для $f, g\in G$  $ [g, h] = ghg^{-1}h^{-1}$. 
 	
 	Если рассмотреть группу $G = \langle a, b\rangle$ (Положим, что $A = a^{-1}$ и $B = b^{-1}$)
 \end{enumerate}
@@ -177,12 +219,59 @@ $aabbAABB$ и $abAB$
 \end{Def}
 
 \begin{Th}
+	У каждой ломаной есть единственное представление в виде $[a, b]^za^xb^y$, где $[a, b] = aba^{-1}b^{-1}$  а степень -- конкатенация, т.е. $[a, b]^2 = [a, b][a, b]$
+\end{Th}
+\begin{proof}
+	Сначала покажем, что такое представление в принципе есть:
+	
+	Если у нас есть слово $xy$, то мы можем 'переставить' их слудующим образом : %TODO вставить таблицу перевода
+	
+	Таким образом мы можем переставить все $b$ влево, а все $a$ вправо. При этом накопится некоторое количество коммутаторов. С помощью действия 2 перемещаем их все влево и получаем форму $[a, b]^za^xb^y$
+	
+	Теперь докажем, что она единственная. Допустим это не так, т.е. для какой-то ломаной есть два таких эквивалентных определения:
+	
+	$[a, b]^za^xb^y\equiv $
+\end{proof}
+
+\begin{Th}
 	Любая кратчайшая замкнутая ломаная -- максимальная.
 \end{Th}
 \begin{proof}
-	фиксируем кратчайшую замкнутую ломаную  L.
+	
+		
+\end{proof}
+
+\subsection{Каждая кратчайшая ломаная простая?}
+	<...>
+\subsection{Достаточные условия кратчайшей ломаной}
+\begin{Def}
+Ломаную мы будем называть кратчайшей, если её нельзя с помощью вытягивания, затягивания
+или переноса привести к ломаной, имеющей меньшую длину.
+\end{Def}
+
+\begin{Con}
+	$L \text{-- кратчайшая}\Longleftrightarrow\nexists \p L: \p L\equiv L ~\&~ len(\p L)<len(L)$
+\end{Con}
+\begin{proof}
+	Пусть $\exists \p L: \p L\equiv L ~\&~ len(\p L)<len(L)$, а тогда мы можем движениями (вытягиваниями, затягиваниями и переносами) преивести ломаную $L$  к ломаной $\p L$, что противоречит определению кратчайшести.
+\end{proof}	
+
+\begin{Con}
+	Ломаная кратчайшая, когда она является частью кратчайшей ломаной
+\end{Con}
+\begin{proof}
+	Допустим противное: пусть ломаная $L$ является частью кратчайшей ломаной $M$ и при этом сама $L$ не является кратчайшей. Тогда существует ломаная $\p L: \p L\equiv L~\&~ len(\p L)<len(L)$
+	
+	А значит, что ломаную $L$ можно движениями привести к меньшей по длине ломаной $p L$. Но все тежи самые движения можно провести внутри ломаной $M$. Представим ломаную $M$ как $m + L + \p m$, где $m$ и $\p m$ -- части ломаной до и после ломаной $L$, а '+' означает конкатенацию. 
+	
+	Т.к. $L\equiv \p L$, то $m + L + \p m\equiv m+\p L + \p m$. Длина ломаной при конкатенации считается, как сумма длин её частей. Получается, что $len(M) = len(m+L+\p m) = len(m) + len(L) + len(\p m) < len(m) + len(\p L) + len(\p m) = len(m+\p L + \p m)$ и при этом $m+L+\p m\equiv m+\p L+\p m$. Но это противоречит условию, что $M$ -- кратчайшая?!
 	
 	
 \end{proof}
+
+\section{Замкнутые кратчайшие ломаные}
+
+\section{Описание максимальных ломаных}
+
 
 \end{document}
