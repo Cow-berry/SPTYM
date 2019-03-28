@@ -190,12 +190,27 @@ bbabAAba$
 	\begin{itemize}
 		\item[$\Rightarrow$] $ls$ -- кратчайшая. Пусть есть такой представитель $\p ls^{-1}\equiv l$
 		
-		$[ls] = [\p l s s^{-1}] = [\p l]$ $\quad \p ls^{-1}$ -- кратчайшее в классе $[l]\Rightarrow |l|=|\p l s^{-1}| = |\p l| + 1\Rightarrow |\p l| = |l|-1$
+		$[ls] = [\p l s s^{-1}] = [\p l]$ $\quad \p ls^{-1}$ -- кратчайшая в классе $[l]\Rightarrow |l|=|\p l s^{-1}| = |\p l| + 1\Rightarrow |\p l| = |l|-1$
 		
 		$\p l$ -- кратчайшая в классе $[ls]\Rightarrow |\p l | = |ls| = |l| + 1$
 		
 		Мы получили два противоречащих равенства $\Rightarrow $ допущение неверно.
-		\item[$\Leftarrow$] Пусть в классе $[l]$ нет кратчайшего представителя, оканчивающегося на $s^{-1}$
+	\end{itemize}
+\end{proof}
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}
+\begin{footnotesize}
+\begin{proof}
+	\begin{itemize}
+		\item[$\Leftarrow$] Пусть в классе $[l]$ нет кратчайшего представителя, оканчивающегося на $s^{-1}$. И пусть $ls$ -- не кратчайшая. $[ls] = [\p l], \p l$ -- кратчайшая
+		
+		$len([l]) - 1 \leqslant len([ls])\leqslant len([l]) + 1$. Второе неравенство выполняется по неравенству треугольника в метрике на графе Кэли группы всех слов.
+		
+		Первое неравенство (тоже по неравенству треугольника): $len([ls])\geqslant len(lss^{-1}) - len([s^{-1}]) = len([l]) - 1$
+		
+		А тогда $|w|-1 \leqslant |\p l | = len([ls])$
 	\end{itemize}
 \end{proof}
 \end{footnotesize}
