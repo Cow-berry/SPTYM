@@ -1,0 +1,4 @@
+\babel@toc {russian}{}
+\beamer@sectionintoc {1}{\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{2}{0}{1}
+\beamer@sectionintoc {2}{\IeC {\CYRP }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrk }\IeC {\cyrt } 1}{6}{0}{2}
+\beamer@sectionintoc {3}{\IeC {\CYRP }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrk }\IeC {\cyrt } 2}{9}{0}{3}

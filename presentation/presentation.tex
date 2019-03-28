@@ -1,0 +1,156 @@
+\documentclass[serif, ucs]{beamer}
+
+\usetheme{Berlin}
+\usecolortheme{dolphin}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[russian]{babel}
+\usepackage{mathrsfs, dsfont} % специальные шрифты, по типу \mathscr или \dsfont
+\usepackage{comment} %для многострочных комментариев
+\usepackage{xcolor} %для гиперссылок в тексте и их цвета
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{C}{>{$}c<{$}} 
+\graphicspath{/home/cowberry/Documents/10M/SPTYM/pics/}
+\newtheorem{Def}{Определение}[section]
+\newtheorem{Th}{Теорема}[section]
+\newtheorem{Lm}{Лемма}[section] 
+\newtheorem{Pb}{Задача}[section]
+\newtheorem{Qu}{Признак}[section]
+\newtheorem{St}{Утверждение}[section]
+\newtheorem{Sl}{Следствие}[section]
+\newtheorem{Zm}{Замечание}[section]
+\newtheorem{Con}{Условие}[section]
+\title[Крадущаяся змея, затаившееся полимино]{Задача 5. Крадущаяся змея, \newline затаившееся полимино}
+\author[VII Санкт-Петербургский Турнир юных математиков]{Коченюк Анатолий}
+\date{Школы 564 \\ \vspace{5mm} 26 - 31 марта 2019 года, г. Санкт-Петербург} 
+\newcommand{\gr}[2]{\includegraphics[scale=#1]{../pics/#2}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section[Введение]{Введение}
+
+\begin{frame}{Введение}
+	\begin{small}
+	\begin{enumerate}
+	\item Ломаную можно представить как путь в $\{(x, y)\in\mathds{R}^2\mid x\in \mathds{Z} \text{ или } y\in\mathds{Z}\}$
+	Введём специальные обозначения, для задания ломаной.
+	\begin{enumerate}
+		\item[] $a, A$ -- отрезки направленные вправо и влево
+		\item[] $b, B$ -- вверх и вниз
+		
+		Для удобства будут также использоваться аналоги:
+		\begin{itemize}
+			\item $a^{-1} = A$
+			\item $b^{-1} = B$
+		\end{itemize}
+	\end{enumerate}
+	\item Общее количество таких отрезков будем называть длиной ломаной.
+	\begin{enumerate}
+		\item []Допускается случай ломаной с длиной 0 --- $\varepsilon$
+	\end{enumerate}
+	\end{enumerate}	
+	\end{small}
+	
+\end{frame}
+
+\begin{frame}
+\begin{enumerate}
+	\item Ломаная замкнутая, если её конец совпадает с началом
+	\item Ломаная простая, если у неё нет самопересечений по вершинам (допускается пересечение начала и конца -- случай замкнутой ломаной)
+	\item За алфавит $S$ будем обозначать множество $S = \{a, b, a^{-1}, b^{-1}\} = \{a, b, A, B\}$ 	
+\end{enumerate}
+
+Введём 2 операции над ломаными:
+\begin{enumerate}
+	\item Вытягивание и затягивание -- добавление в любое место пути $l\in\{aA, Aa, bB, Bb\}$
+	\item Перенос -- мы можем свободно перемещать в любое место пути определённые комбинации. 
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Дополнительные определения}
+	\begin{enumerate}
+		\item $l_1 \equiv l_2\Longleftrightarrow$ одну можно перевести в другую
+		\item Префикс $l$ -- ломаная, идущая по тому же маршруту и не превышающая по длине
+		\item Ломаная кратчайшая $\Longleftrightarrow$ нет эквивалентной с меньшей длиной
+		\item Ломаная максимальная $\Longleftrightarrow$ ломаная кратчайшая и единственная кратчайшая ломаная, префиксом которой она является -- это она сама
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\begin{footnotesize}
+	Также стоит ввести такую конструкцию, как коммутатор:
+	
+	\begin{Def}
+		Коммутатор двух букв $x, y$ из алфавита $s$  $[x, y] = xyx^{-1}y^{-1}$ 
+	\end{Def}
+	
+	Понятно, что каждый коммутатор либо эквивалентен пустому слову, либо по второму движению коммутативен со всеми элементами.
+	
+	Кроме того, с его помощью можно менять местами буквы следующим образом:
+	
+	$[a, b] ba = aba^{-1}b^{-1}ba\equiv ab$
+	
+	Аналогично меняются местами другие буквы. В ячейке я буду записывать то, что нужно добавить.
+	
+	\begin{tabular}{C|C|C|C|C|}
+		&a&b&a^{-1}&b^{-1}\\
+		\hline
+		a&\times &[a, b]&\times&[a, b]^{-1}\\
+		\hline
+		b&[a, b]^{-1}&\times&[a, b]&\times\\
+		\hline
+		a^{-1}&\times&[a, b]^{-1}&\times&[a, b]\\
+		\hline
+		b^{-1}&[a, b]&\times&[a, b]^{-1}&\times\\
+	\end{tabular}
+	\end{footnotesize}
+\end{frame}
+\section{Пункт 1}
+\begin{frame}{Пункт 1 a, б}
+	\begin{footnotesize}
+	\begin{enumerate}
+		\item $bbb \equiv babAAba\qquad$ $babA[AbaB]BB\equiv
+ba[AbaB]bABB = b[aA]ba[Bb]ABB \equiv
+bb[aA]BB \equiv b[bB]B \equiv bB \equiv \varepsilon \Rightarrow bbb \equiv
+bbabAAba$
+		\item $bbA\not\equiv aaB$. Отметим, что никакое движение не изменяет конечную точку и сумму степеней при каждой из букв (если заменить $A$ и $B$ на $a^{-1}$ и $b^{-1}$).
+	\end{enumerate}
+	\end{footnotesize}
+	
+	\gr{0.2}{bbb} \gr{0.2}{babAAba}\gr{0.2}{bbA}\gr{0.2}{aaB}
+\end{frame}
+
+\begin{frame}{Пункт 1 в}
+	\begin{enumerate}
+		\item []$abAB\not\equiv aabbAABB$
+		\begin{Def}
+			У отрезков ломаной есть направление. Будем считать, что если в многоугольнике стороны направлены против часовой стрелке, то площадь положительна. В противном случае считаем её отрицательной.
+		\end{Def}
+		\begin{Th}
+		При действии движений, если рассматривать многоугольник составленный из точек ломаной в порядке букв в слове, то его ориентированная площадь не изменится. Такой многоугольник существует, когда ломаная замкнутая.
+		\end{Th}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\gr{0.4}{abAB} \gr{0.4}{aabbAABB}
+	
+	Очевидно, что площадь первой ломаной (1) не равна площади второй (4), а значит они неэквивалентны.
+\end{frame}
+\section{Пункт 2}
+\begin{frame}{Пункт 2}
+	
+\end{frame}
+\end{document}
