@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  29 MAR 2019 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.26)  29 MAR 2019 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1527,23 +1527,23 @@ Overfull \vbox (23.31454pt too high) detected at line 223
 ] [14
 
 ]
-<../pics/babaBaBAAA.png, id=746, 401.5pt x 344.28625pt>
-File: ../pics/babaBaBAAA.png Graphic file (type png)
-<use ../pics/babaBaBAAA.png>
-Package pdftex.def Info: ../pics/babaBaBAAA.png  used on input line 258.
-(pdftex.def)             Requested size: 160.59715pt x 137.71205pt.
-<../pics/bbbaBBaBAA.png, id=747, 344.28625pt x 401.5pt>
-File: ../pics/bbbaBBaBAA.png Graphic file (type png)
-<use ../pics/bbbaBBaBAA.png>
-Package pdftex.def Info: ../pics/bbbaBBaBAA.png  used on input line 258.
-(pdftex.def)             Requested size: 137.71205pt x 160.59715pt.
+<../pics/aabAbABB.png, id=746, 344.28625pt x 344.28625pt>
+File: ../pics/aabAbABB.png Graphic file (type png)
+<use ../pics/aabAbABB.png>
+Package pdftex.def Info: ../pics/aabAbABB.png  used on input line 258.
+(pdftex.def)             Requested size: 137.71205pt x 137.71205pt.
+<../pics/aaabbbAAABBB.png, id=747, 401.5pt x 401.5pt>
+File: ../pics/aaabbbAAABBB.png Graphic file (type png)
+<use ../pics/aaabbbAAABBB.png>
+Package pdftex.def Info: ../pics/aaabbbAAABBB.png  used on input line 258.
+(pdftex.def)             Requested size: 160.59715pt x 160.59715pt.
 
 Overfull \vbox (46.4921pt too high) detected at line 258
  []
 
 [15
 
- <../pics/babaBaBAAA.png> <../pics/bbbaBBaBAA.png>] [16
+ <../pics/aabAbABB.png> <../pics/aaabbbAAABBB.png>] [16
 
 ]
 \tf@nav=\write7
@@ -1566,7 +1566,7 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Here is how much of TeX's memory you used:
  23386 strings out of 492982
  405451 string characters out of 6134895
- 582104 words of memory out of 5000000
+ 582092 words of memory out of 5000000
  26386 multiletter control sequences out of 15000+600000
  23150 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1594,7 +1594,7 @@ f/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfti1095.pfb>
-Output written on presentation.pdf (16 pages, 386810 bytes).
+Output written on presentation.pdf (16 pages, 386703 bytes).
 PDF statistics:
  934 PDF objects out of 1000 (max. 8388607)
  839 compressed objects within 9 object streams
